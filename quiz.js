@@ -40,3 +40,18 @@ function tree(obj) {
 }
 //As soon as 'Grow your tree button' is clicked, the fill function will begin
 button.addEventListener("click", fill);
+
+// As soon as 'Enter' is clicked, the fill function will begin
+// var l =document.getElementById("levels");
+document.getElementById("levels").addEventListener("keydown", function (e) {
+    if (e.keyCode === 13) {  //checks whether the pressed key is "Enter"
+        fill();
+    }
+    });
+
+
+
+
+
+
+
